@@ -4,8 +4,8 @@
 **Formula:**
 ps[i+1] = ps[i] + arr[i]  {For 0 based indexing}
 
-
 OR 
+
 ps[i] = ps[i-1] + arr[i] {for 1 indexing}
 
 
