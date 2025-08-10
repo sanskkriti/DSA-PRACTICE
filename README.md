@@ -19,6 +19,6 @@ diff[r] -= val;
 
 OR
 
-diff[l] += val; // FOR 1 based indexing
+diff[l] += val;  {FOR 1 based indexing}
 diff[r + 1] -= val;
-PrefixSum — used for range addition, subarray questions, etc.
+
