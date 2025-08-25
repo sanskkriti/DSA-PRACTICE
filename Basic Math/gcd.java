@@ -1,19 +1,21 @@
-import java.util.*;
-class gcd {
-  public static void main (String Args[])
-  {
-Scanner in = new Scanner(System.in);
-    int a = in.nextInt();
-    int b = in.nextInt();
-    int result = Math.min(a,b);
+//BIG O(LOG PHI)(MIN A,B))
 
-   while (result > 0) { // Keep checking until GCD found
-            if (a % result == 0 && b % result == 0) {
-                break; // Found GCD
-            }
-            result--; // Try next smaller number
+class Solution {
+    public int GCD(int n1, int n2)
+   
+     {
+    while(n1>0 && n2>0)
+    {
+        if (n1>n2)
+        {
+          n1= n1%n2;
         }
-
-System.out.println(result);
-  }
+        else
+        n2=n2%n1;
+    }
+    if (n1==0)
+    return n2;
+    else 
+    return n1;
+    }
 }
